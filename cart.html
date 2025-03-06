@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart | Student Market</title>
+  <link rel="stylesheet" href="assets.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Student Market</div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="productlisting.html">Browse Products</a></li>
+        <li><a href="seller.html">Sell Your Product</a></li>
+        <li><a href="useraccount.html">Account/Login</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <input type="text" placeholder="Search products, categories...">
+      <a href="cart.html" class="cart-icon">Cart (0)</a>
+    </div>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-page">
+    <h2>Your Shopping Cart</h2>
+    <div class="cart-items">
+      <!-- Cart Item Example -->
+      <div class="cart-item">
+        <img src="assets/images/product1.jpg" alt="Product 1">
+        <div class="item-details">
+          <h3>Product 1</h3>
+          <p>Price: $15.00</p>
+          <label>
+            Quantity:
+            <input type="number" name="quantity" value="1" min="1">
+          </label>
+          <button class="btn remove">Remove</button>
+        </div>
+      </div>
+      <!-- Additional cart items can be added here -->
+    </div>
+    <div class="cart-summary">
+      <h3>Total: $15.00</h3>
+      <a href="checkout.html" class="btn">Proceed to Checkout</a>
+      <a href="productlisting.html" class="btn">Continue Shopping</a>
+    </div>
+  </section>
+
+  <script src="assests.js"></script>
+</body>
+</html>
